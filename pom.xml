@@ -17,6 +17,13 @@
 	    <version>7.10.2</version>
 	    <scope>test</scope>
 	</dependency>
+	
+	<dependency>
+	    <groupId>io.github.bonigarcia</groupId>
+	    <artifactId>webdrivermanager</artifactId>
+	    <version>5.4.1</version>
+	</dependency>
+
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>

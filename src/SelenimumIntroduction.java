@@ -6,6 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.webdriver.WebDriverBrowser;
 
 public class SelenimumIntroduction implements WebDriver {
 
@@ -15,11 +19,24 @@ public class SelenimumIntroduction implements WebDriver {
 		//Chrome Driver
 		//Chromedriver.exe -> Chrome browser
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\chrome-win64\\chrome.exe");
-		ChromeDriver chromeDriver = new ChromeDriver();
-		chromeDriver.get("https://rahulshettyacademy.com");
-		System.out.println(chromeDriver.getTitle());
-		System.out.println(chromeDriver.getCurrentUrl());
-		chromeDriver.close();
+//		ChromeDriver chromeDriver = new ChromeDriver();
+//		chromeDriver.get("https://rahulshettyacademy.com");
+//		System.out.println(chromeDriver.getTitle());
+//		System.out.println(chromeDriver.getCurrentUrl());
+//		chromeDriver.close();
+		
+		//Firefox launch
+		//geckodriver
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Archie\\Documents\\geckodriver_x64\\geckodriver.exe");
+		//WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("https://rahulshettyacademy.com");
+		//System.out.println(driver.getTitle());
+		//System.out.println(driver.getCurrentUrl());
+		//driver.close();
+		//driver.quit();
+		
 
 	}
 
