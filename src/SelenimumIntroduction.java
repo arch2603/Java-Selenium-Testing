@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,23 +19,29 @@ public class SelenimumIntroduction implements WebDriver {
 		//invoking the browser
 		//Chrome Driver
 		//Chromedriver.exe -> Chrome browser
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\chrome-win64\\chrome.exe");
-//		ChromeDriver chromeDriver = new ChromeDriver();
-//		chromeDriver.get("https://rahulshettyacademy.com");
-//		System.out.println(chromeDriver.getTitle());
-//		System.out.println(chromeDriver.getCurrentUrl());
-//		chromeDriver.close();
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\chrome-win64\\chrome.exe");
+		ChromeDriver chromeDriver = new ChromeDriver();
+		chromeDriver.get("https://rahulshettyacademy.com");
+		System.out.println(chromeDriver.getTitle());
+		System.out.println(chromeDriver.getCurrentUrl());
+		chromeDriver.close();
 		
 		//Firefox launch
 		//geckodriver
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Archie\\Documents\\geckodriver_x64\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "C:\\Users\\Archie\\Documents\\geckodriver_x64\\geckodriver.exe");
 		//WebDriverManager.firefoxdriver().setup();
-		WebDriver driver = new FirefoxDriver();
+		//WebDriver driver = new FirefoxDriver();
 		
-		driver.get("https://rahulshettyacademy.com");
-		//System.out.println(driver.getTitle());
-		//System.out.println(driver.getCurrentUrl());
-		//driver.close();
+		//Microsoft Edge Drive
+		//System.setProperty("webdriver.edge.driver", "C:\\Users\\Archie\\Documents\\microsoftedgedriver_64\\msedgedriver.exe");
+		//WebDriverManager.firefoxdriver().setup();
+		//WebDriver driver = new EdgeDriver();
+		
+		
+//		driver.get("https://rahulshettyacademy.com");
+//		System.out.println(driver.getTitle());
+//		System.out.println(driver.getCurrentUrl());
+//		driver.close();
 		//driver.quit();
 		
 
