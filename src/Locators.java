@@ -20,7 +20,11 @@ public class Locators {
 		
 		chromeDriver.findElement(By.linkText("Forgot your password?")).click();
 		chromeDriver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("John");
-		
+		chromeDriver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("johnny@gmail.com");
+		chromeDriver.findElement(By.xpath("//input[@placeholder='Email']")).clear();
+		chromeDriver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("elanta@mydomain.com");
+		//chromeDriver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("0211613891");
+		chromeDriver.findElement(By.xpath("//form/input[3]")).sendKeys("0211613891");
 		//chromeDriver.close();
 
 	}
