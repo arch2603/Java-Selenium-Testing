@@ -18,6 +18,9 @@ public class Locators {
 		chromeDriver.findElement(By.className("signInBtn")).click();
 		System.out.println(chromeDriver.findElement(By.cssSelector("p.error")).getText());
 		
+		chromeDriver.findElement(By.linkText("Forgot your password?")).click();
+		chromeDriver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("John");
+		
 		//chromeDriver.close();
 
 	}
